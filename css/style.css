@@ -1,0 +1,30 @@
+/* 
+@property --num {
+  syntax: "<integer>";
+  initial-value: 100000;
+  inherits: false;
+}
+
+div {
+  animation: counter 3s ease-in-out;
+  counter-reset: num var(--num);
+  padding: 2rem;
+  font-size: 70px;
+  font-weight: bolder;
+  color: rgb(68, 189, 122);
+}
+
+div::after {
+    content: counter(num);
+}
+
+
+@keyframes counter {
+  0% {
+    --num: 0;
+  }
+  100% {
+    --num: 100000;
+  }
+}
+ */
